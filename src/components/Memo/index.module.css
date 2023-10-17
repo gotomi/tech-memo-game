@@ -1,0 +1,57 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  justify-content: center;
+  padding: 8px;
+  background-color: #eee;
+}
+.gridItem {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.gridItem img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  visibility: visible;
+}
+
+.hidden {
+  transform: scale(1);
+  transition: 0.6s;
+  background-color: yellowgreen;
+}
+
+.hidden img {
+  visibility: hidden;
+}
+
+.resolved img {
+  opacity: 0.5;
+}
+
+.open {
+  transform: scale(1.1);
+  border: 1px solid #bbb;
+}
+
+.resolved {
+  background-color: #1f1f1f;
+
+  transform: scale(1);
+}
+
+.scoreboard {
+  background-color: #eee;
+  color: #000;
+  padding: 8px;
+  display: flex;
+}

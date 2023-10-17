@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Memo from "../components/Memo/Memo";
+---
+
+<Layout title="Memo Game">
+  <main>
+    <h1>Memo Tech Game</h1>
+    <Memo client:load />
+  </main>
+</Layout>
+
+<style>
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 640px;
+  }
+</style>
